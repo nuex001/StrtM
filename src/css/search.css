@@ -1,0 +1,177 @@
+.search {
+    width: 100%;
+    height: 100%;
+    padding-left: 7em;
+    padding-top: 8em;
+}
+.search main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0em 2em;
+    /* border: 2px solid var(--text); */
+}
+
+.search .headerRow{
+    display: flex;
+    align-items: center;
+    margin: 1.5em 0em;
+    gap: 0em 1em;
+}
+.search h2{
+    font-size: 2em;
+    color: #a4c7c6;
+    text-align: left;
+}
+.search h3{
+    font-size: 2em;
+    color: #a4c7c6;
+    text-align: left;
+}
+
+.search main .subMain {
+    width: 100%;
+}
+
+.search main h1 {
+    color: var(--color);
+    font-size: 2em;
+    margin-top: 1em;
+}
+/*  */
+
+.search main .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: left;
+    gap: 4em;
+    height: 530px;
+    margin-top: 1.5em;
+    margin-right: 0em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 2em;
+    /* border: 2px solid var(--text); */
+}
+
+.search main .row::-webkit-scrollbar {
+    display: none;
+}
+
+.search main .row a {
+    width: 170px;
+    height: auto;
+    color: var(--text);
+    position: relative;
+}
+
+.search main .row a img {
+    object-fit: cover;
+    width: 100%;
+    height: 18em;
+    border-radius: 2em;
+}
+
+.search main .row a .txt {
+    padding: 1em 0.5em;
+}
+
+.search main .row a h6 {
+    font-size: 1.4em;
+    margin: 0.5em 0;
+    font-weight: 500;
+    color: #a4c7c6;
+    margin-bottom: 0.2em;
+}
+
+.search main .row a p {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.search main .row a span sup {
+    margin-right: 1px;
+}
+
+.search main .row a span {
+    font-weight: 600;
+    width: 100px;
+    display: block;
+    white-space: nowrap;
+    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.7;
+    /* border: 2px solid #fff; */
+}
+
+.search main .row a p.suscribe {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.search main .row a p.suscribe .user:first-child {
+    margin-left: 0.2em;
+}
+
+.search main .row a p.suscribe .user {
+    margin-left: -0.3em;
+    /* color: var(--color); */
+}
+.search .noresult{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15em;
+    color: var(--color);
+}
+
+
+/* MOBILE TAB */
+@media (max-width: 766px) {
+    .search {
+        width: 100%;
+        height: 100%;
+        padding-left: 0em;
+        padding-top: 2em;
+    }
+    .search main h1 {
+        margin-bottom: 0.5em;
+    }
+
+}
+
+
+/* TAB */
+@media (min-width: 736px) and (max-width: 1324px) {
+    .search {
+        width: 100%;
+        height: 100%;
+        padding-left: 9em;
+    }
+
+    .search main .box {
+        width: 100%;
+        height: 7em;
+        gap: 0em 2em;
+        color: var(--text);
+        overflow-x: scroll;
+    }
+
+    .search main .box a {
+        /*  */
+        white-space: nowrap;
+    }
+    .overlay form {
+        width: 60%;
+    }
+}

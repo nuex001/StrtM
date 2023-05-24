@@ -1,0 +1,18 @@
+.comingSoon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comingSoon img{
+object-fit: cover;
+width: 500px;
+}
+.comingSoon h1{
+color: var(--color);
+font-size: 4em;
+margin: 0.4em;
+font-family: monospace;
+}

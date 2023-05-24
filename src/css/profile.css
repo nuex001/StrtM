@@ -1,0 +1,642 @@
+.profile {
+    width: 100%;
+    height: 100%;
+    padding-left: 7em;
+}
+
+.profile .subNav {
+    width: 100%;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 4em;
+    color: var(--text);
+    position: relative;
+    z-index: 10;
+    /* border: 2px solid var(--text); */
+}
+
+.profile .subNav img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+.profile .subNav p {
+    color: var(--color);
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    gap: 0em 0.2em;
+}
+
+.profile .subNav button {
+    background-color: transparent;
+    color: var(--text);
+    padding: 0.7em 2em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(225, 225, 225, 0.5);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 0 0.5em;
+}
+
+.profile button .icon {
+    color: var(--color);
+}
+
+.profile main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0em 2em;
+    /* border: 2px solid var(--text); */
+}
+
+.profile main .subMain {
+    width: 100%;
+}
+
+.profile main h1 {
+    color: var(--color);
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.profile main .box {
+    width: 100%;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    gap: 0em 3em;
+    color: var(--text);
+    /* border: 2px solid var(--text); */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 2em;
+}
+
+.profile main .box::-webkit-scrollbar {
+    display: none;
+}
+
+.profile main .box a {
+    background-color: transparent;
+    color: var(--text);
+    padding: 0.8em 2.2em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(225, 225, 225, 0.5);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile main a.active {
+    background-color: var(--color);
+    box-shadow: 0px 0px 4px 0px var(--bg);
+}
+
+.profile main .sidebar {
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2em 0em;
+    background-color: var(--backgrond);
+    position: relative;
+}
+
+.profile main .sidebar a.head {
+    color: var(--color);
+    font-size: 1.7em;
+    display: block;
+    margin-top: 1em;
+    font-family: monospace;
+}
+
+.profile main .sidebar .rows a:first-child {
+    margin-top: 2em;
+}
+
+.profile main .sidebar .rows a {
+    width: 100%;
+    height: 7em;
+    display: flex;
+    align-items: flex-end;
+    margin: 3em 0em;
+    color: var(--text);
+    /* box-shadow: 0px 0px 4px 0px rgba(225, 225, 225, 0.5); */
+    /* overflow: hidden; */
+}
+
+.profile main .sidebar .rows a img {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile main .sidebar .rows a .text {
+    margin-left: 1em;
+}
+
+
+
+.profile main .sidebar .rows a .text h3 {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    /* color: var(--color); */
+    text-transform: uppercase;
+    box-shadow: 0px 0px 4px 0px rgba(225, 225, 225, 0.5);
+}
+
+.profile main .sidebar .rows a .text p {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.profile main .sidebar .rows a .text p .user:first-child {
+    margin-left: 0.1em;
+}
+
+.profile main .sidebar .rows a .text p .user {
+    margin-left: -3px;
+}
+
+.profile main .sidebar .storage {
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+    width: 91%;
+    height: auto;
+    padding: 0.5em 0em;
+    /* border: 2px solid var(--text); */
+}
+
+.profile main .sidebar .storage h1 {
+    font-size: 1.4em;
+    color: var(--color);
+    font-family: monospace;
+    margin: 0.5em 0em;
+}
+
+.profile main .sidebar .storage h2 {
+    font-size: 1em;
+    color: var(--color);
+    font-family: monospace;
+    margin: 1em 0em;
+}
+
+.profile main .sidebar .storage h2 span {
+    color: var(--text);
+}
+
+.profile main .sidebar .storage .progress_cont {
+    width: 100%;
+    height: 8px;
+    border-radius: 7px;
+    background-color: rgb(231, 90, 90);
+    cursor: pointer;
+}
+
+.profile main .sidebar .storage .progress_cont .progress_bar {
+    width: 70%;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(103, 212, 103);
+    position: relative;
+}
+
+.profile main .sidebar .storage button {
+    background-color: transparent;
+    color: var(--text);
+    padding: 0.7em 2em;
+    margin: 1em 0em;
+    border-radius: 5px;
+    display: flex;
+    gap: 0 0.5em;
+    border: none;
+    cursor: pointer;
+    margin: 1em 0em;
+    box-shadow: 0px 0px 5px 0px rgba(225, 225, 225, 0.5);
+}
+
+/*  */
+
+
+.profile main .header {
+    width: 370px;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--text);
+    position: relative;
+    padding: 2em 0em;
+    /* border: 2px solid #fff; */
+}
+
+.profile main .header img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile main .header .text {
+    padding: 1em 0.5em;
+    margin-left: 1em;
+}
+
+.profile main .header .text h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.profile main .header .text h3 {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--color);
+    box-shadow: 0px 0px 4px 0px rgba(225, 225, 225, 0.5);
+}
+
+.profile main .header p {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.profile main .header span sup {
+    margin-right: 1px;
+}
+
+.profile main .header span {
+    font-weight: 600;
+    width: 100px;
+    display: block;
+    white-space: nowrap;
+    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.7;
+    /* border: 2px solid #fff; */
+}
+
+.profile main .header p.suscribe {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.profile main .header p.suscribe .user:first-child {
+    margin-left: 0.2em;
+}
+
+.profile main .header p.suscribe .user {
+    margin-left: -0.3em;
+    /* color: var(--color); */
+}
+
+/*  */
+
+.profile main .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-self: normal; */
+    align-self: flex-start;
+    justify-content: left;
+    gap: 4em;
+    height: 530px;
+    margin-top: 1.5em;
+    margin-right: 0em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 2em;
+}
+
+.profile main .row::-webkit-scrollbar {
+    display: none;
+}
+
+.profile main .row a {
+    width: 170px;
+    height: auto;
+    color: var(--text);
+    position: relative;
+}
+
+.profile main .row a img {
+    object-fit: cover;
+    width: 100%;
+    height: 18em;
+    border-radius: 2em;
+}
+
+.profile main .row a .txt {
+    padding: 1em 0.5em;
+}
+
+.profile main .row a h6 {
+    font-size: 1.4em;
+    margin: 0.5em 0;
+    font-weight: 500;
+    color: #a4c7c6;
+    margin-bottom: 0.2em;
+}
+
+.profile main .row a p {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.profile main .row a span sup {
+    margin-right: 1px;
+}
+
+.profile main .row a span {
+    font-weight: 600;
+    width: 100px;
+    display: block;
+    white-space: nowrap;
+    margin-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.7;
+    /* border: 2px solid #fff; */
+}
+
+.profile main .row a p.suscribe {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.profile main .row a p.suscribe .user:first-child {
+    margin-left: 0.2em;
+}
+
+.profile main .row a p.suscribe .user {
+    margin-left: -0.3em;
+    /* color: var(--color); */
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay:last-child {
+    padding-top: 28em;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 1em;
+}
+
+.overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay:last-child form {
+    margin-top: 8em;
+}
+
+.overlay form {
+    width: 30%;
+    height: auto;
+    padding: 2em;
+    padding-top: 4em;
+    border-radius: 1em;
+    color: var(--bg);
+    text-align: center;
+    /* box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.5); */
+    position: relative;
+    background-color: var(--backgrond);
+}
+
+.overlay form .icon {
+    position: absolute;
+    color: var(--color);
+    font-size: 3.5em;
+    top: 3%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.overlay form h1 {
+    font-family: monospace;
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: var(--color);
+}
+
+.overlay form .row {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 1em 0em;
+    margin: 1em auto;
+}
+
+.overlay form .row label {
+    font-weight: 600;
+    font-size: 1.4em;
+    color: var(--color);
+}
+
+.overlay form .row input {
+    height: 35px;
+    font-weight: 600;
+    font-size: 1.4em;
+    outline: none;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overlay form button {
+    padding: 0.9em 3em;
+    background-color: transparent;
+    border: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: var(--text);
+    font-family: monospace;
+    font-weight: 600;
+    background-color: var(--color);
+    margin: 1em 0em;
+    cursor: pointer;
+}
+
+/*  */
+.overlay form.upload .icon {
+    position: absolute;
+    color: var(--color);
+    font-size: 3.5em;
+    top: 1%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.overlay form.upload .row {
+    width: 100%;
+    gap: 1em 0em;
+    margin: 1.5em auto;
+}
+
+.overlay form.upload .row label {
+    /* color: var(--text); */
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.overlay form.upload input {
+    height: 40px;
+    border-radius: 3px;
+}
+
+.overlay form .row.cat input {
+    box-shadow: none;
+}
+
+.overlay form .row textarea {
+    height: 150px;
+    font-weight: 600;
+    font-size: 1.4em;
+    outline: none;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    border-radius: 5px;
+    resize: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* MOBILE TAB */
+@media (max-width: 766px) {
+    .profile {
+        width: 100%;
+        height: 100%;
+        padding-left: 0em;
+    }
+
+    .profile .subNav {
+        width: 70%;
+        gap: 0 2em;
+        position: absolute;
+        top: 1.5%;
+        right: 1%;
+        z-index: 10;
+    }
+
+    .profile main h1 {
+        margin-bottom: 0.5em;
+    }
+
+    .profile main .box {
+        width: 100%;
+        height: 7em;
+        gap: 0em 2em;
+        padding: 0 0.2em;
+        color: var(--text);
+        overflow-x: scroll;
+    }
+
+    .profile main .box a {
+        white-space: nowrap;
+    }
+
+    .profile main .sidebar {
+        position: fixed;
+        width: 45%;
+        right: 1%;
+        padding: 2em 2em;
+        transform: translateX(100%);
+        transform-origin: right;
+        transition: 500ms ease-in-out;
+    }
+
+    .profile main .sidebar.active {
+        transform: translateX(0%);
+    }
+
+    .profile main .sidebar .storage {
+        right: 2%;
+        bottom: 15%;
+    }
+
+    .overlay {
+        padding-top: 15em;
+    }
+
+    .overlay form {
+        width: 90%;
+    }
+
+}
+
+
+/* TAB */
+@media (min-width: 736px) and (max-width: 1324px) {
+    .profile {
+        width: 100%;
+        height: 100%;
+        padding-left: 9em;
+    }
+
+    .profile main .box {
+        width: 100%;
+        height: 7em;
+        gap: 0em 2em;
+        color: var(--text);
+        overflow-x: scroll;
+    }
+
+    .profile main .box a {
+        /*  */
+        white-space: nowrap;
+    }
+
+    .overlay form {
+        width: 60%;
+    }
+}

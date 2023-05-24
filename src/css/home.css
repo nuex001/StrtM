@@ -1,0 +1,461 @@
+.home {
+  float: right;
+  width: calc(100% - 4%);
+  height: calc(100% - 70px);
+  padding: 1em;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 70px;
+}
+
+.home::-webkit-scrollbar {
+  display: none;
+}
+
+.home header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 0;
+  /* border: 2px solid var(--text); */
+}
+
+.home header .box {
+  width: 50%;
+  height: 30em;
+  border-radius: 2em;
+  background: #609eaf;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 2em;
+  padding-bottom: 4em;
+  color: var(--text);
+  /* border: 2px solid var(--text); */
+}
+
+.home header .box .vector {
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0%;
+  z-index: 4;
+}
+
+.home header .box .person {
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 5;
+}
+
+.home header .box h1 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.home header .box p {
+  padding-right: 25em;
+  font-weight: normal;
+  font-size: 1.4em;
+  line-height: 20px;
+  opacity: 0.7;
+  font-family: "Quicksand", sans-serif;
+}
+
+.home header .box .reactions {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 3em;
+  /* border: 2px solid #fff; */
+}
+
+.home header .box .reactions img {
+  position: relative;
+  margin-left: -1em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.home header .box .reactions img:first-child {
+  margin-left: 0em;
+}
+
+.home header .box .reactions img:hover {
+  transform: scale(1.1);
+  z-index: 4;
+}
+
+.home header .box .reactions span {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  font-size: 1.4em;
+}
+
+.home header .box .reactions span .icon {
+  margin-right: 0.3em;
+}
+
+.home header .charts {
+  width: 45%;
+  height: 30em;
+  padding-right: 4em;
+  /* border: 2px solid #fff; */
+}
+
+.home header .charts h1 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.home header .charts h1 a {
+  color: var(--text);
+}
+
+.home header .charts .row {
+  width: 100%;
+  height: 8em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em 1em;
+  position: relative;
+  cursor: pointer;
+  margin: 1em 0;
+  background-color: var(--highlight);
+  /* border: 2px solid #fff; */
+}
+
+.home header .charts .row img {
+  object-fit: cover;
+  width: 6em;
+  height: 6em;
+  border-radius: 1em;
+}
+
+.home header .charts .row .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5em;
+  color: #a4a5a6;
+}
+
+.home header .charts .row .text h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.home header .charts .row .text p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.home header .charts .row .text p .user {
+  margin-left: -5px;
+}
+
+.home header .charts .row .text p .user:first-child {
+  margin-left: 4px;
+}
+
+.home header .charts .row .text span {
+  opacity: 0.7;
+  margin: 1em 0;
+}
+
+.home header .charts .row .icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 4%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a4a5a6;
+  font-size: 1.4em;
+  color: var(--color);
+  z-index: 5;
+}
+
+.home header .charts .row .icon .like,
+.home header .charts .row .icon .liked {
+  display: none;
+}
+
+.home header .charts .row .icon .like.active,
+.home header .charts .row .icon .liked.active {
+  display: block;
+}
+
+/* SLIDER */
+.sliderCont {
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  margin-top: 2.5em;
+}
+
+.sliderCont h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.sliderCont h1 a {
+  color: var(--text);
+}
+
+.sliderCont .slider {
+  cursor: pointer;
+  position: relative;
+}
+
+.sliderCont .slides {
+  height: auto;
+  margin-top: 1.5em;
+  margin-right: 0em;
+}
+
+.sliderCont .slides img {
+  object-fit: cover;
+  width: 80%;
+  height: 16em;
+  border-radius: 2em;
+  /* border: 2px solid #fff; */
+}
+
+.sliderCont .slides a {
+  color: #a4a5a6;
+}
+
+.sliderCont .slides h6 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+  font-weight: 500;
+}
+
+.sliderCont .slides p {
+  opacity: 0.7;
+}
+
+.sliderCont .slides span sup {
+  margin-right: 1px;
+}
+
+.sliderCont .slides span {
+  position: absolute;
+  bottom: 0%;
+  right: 20%;
+  font-weight: 600;
+  width: 70px;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+.home header .mobileCharts {
+  display: none;
+}
+
+
+
+
+@media (max-width: 766px) {
+  .home {
+    margin-top: 0px;
+  }
+
+  .home header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 0;
+    /* border: 2px solid var(--text); */
+    flex-direction: column;
+  }
+
+  .home header .box {
+    width: 100%;
+    height: 45em;
+    padding: 2em 2em;
+    padding-bottom: 4em;
+  }
+
+  .home header .box .vector {
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    left: -40%;
+    top: -50%;
+    transform: rotate(-90deg);
+  }
+
+  .home header .box .vector:last-child {
+    display: none;
+  }
+
+  .home header .box h1 {
+    margin-bottom: auto;
+  }
+
+  .home header .box p {
+    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: auto;
+  }
+
+  .home header .box .reactions {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    /* border: 2px solid #fff; */
+  }
+
+  .home header .box .reactions img {
+    position: relative;
+    margin-left: -1em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+  }
+
+  .home header .box .reactions img:first-child {
+    margin-left: 0em;
+  }
+
+  .home header .box .reactions img:hover {
+    transform: scale(1.1);
+    z-index: 4;
+  }
+
+  .home header .box .reactions span {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    font-size: 1.4em;
+  }
+
+  .home header .box .reactions span .icon {
+    margin-right: 0.3em;
+  }
+
+  .home header .charts {
+    display: none;
+  }
+
+  /* Mobile CHARTS */
+  .home header .mobileCharts {
+    width: 100%;
+    height: auto;
+    padding: 1em 0;
+    display: block;
+    /* border: 2px solid var(--color); */
+  }
+
+  .home header .mobileCharts h1 {
+    color: var(--text);
+    margin: 1em 0;
+  }
+
+  .home header .mobileCharts .slides:first-child {
+    margin-left: 0em;
+  }
+
+  .home header .mobileCharts .slides {
+    margin-left: 2em;
+  }
+
+  .home header .mobileCharts a {
+    width: 100%;
+    height: 22em;
+    display: block;
+    padding: 2em;
+    background-color: var(--highlight);
+    border-radius: 2em;
+    color: #a4a5a6;
+    position: relative;
+  }
+
+  .home header .mobileCharts a img {
+    object-fit: cover;
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+  }
+
+  .home header .mobileCharts a h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1em;
+  }
+
+  .home header .mobileCharts a span {
+    opacity: 0.7;
+    display: block;
+    margin: 1em 0;
+  }
+
+  .home header .mobileCharts p {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .home header .mobileCharts p .user {
+    margin-left: -5px;
+  }
+
+  .home header .mobileCharts p .user:first-child {
+    margin-left: 4px;
+  }
+
+  .home header .mobileCharts a .icon {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a4a5a6;
+    font-size: 1.4em;
+    color: var(--color);
+    z-index: 5;
+  }
+
+  .home header .mobileCharts a .icon .like,
+  .home header .mobileCharts a .icon .liked {
+    display: none;
+  }
+
+  .home header .mobileCharts a .icon .like.active,
+  .home header .mobileCharts a .icon .liked.active {
+    display: block;
+  }
+}

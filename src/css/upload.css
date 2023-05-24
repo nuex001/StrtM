@@ -1,0 +1,91 @@
+.upload_container {
+  float: right;
+  width: calc(100% - 2%);
+  margin-right: -2.5em;
+  height: 100%;
+  padding: 1em;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  background-size: 100% 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 90px;
+  /* border: 2px solid #fff; */
+}
+.upload_container::-webkit-scrollbar {
+  display: none;
+}
+.upload_container form {
+  width: 30%;
+  height: auto;
+  margin: 1em auto;
+  /* border: 2px solid #fff; */
+}
+.upload_container form label {
+  display: flex;
+  width: 50%;
+  height: 20em;
+  border-radius: 1em;
+  margin: 1em auto;
+  /* border: 2px solid #fff; */
+}
+.upload_container form label img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  cursor: pointer;
+}
+.upload_container form input {
+  width: 100%;
+  height: 3em;
+  margin: 0.7em 0;
+  padding: 0 1em;
+  background-color: transparent;
+  outline: none;
+  color: var(--text);
+  border: none;
+}
+.upload_container form textarea {
+  width: 100%;
+  height: 6em;
+  background-color: transparent;
+  outline: none;
+  padding: 1em 1em;
+  color: var(--text);
+  resize: none;
+  border: none;
+}
+.upload_container form input[type="submit"] {
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  margin: 0.7em auto;
+  transition: 0.5s ease-in-out;
+}
+.upload_container form input[type="submit"]:hover {
+  color: var(--color);
+}
+
+/* MOBILE */
+@media (max-width: 766px) {
+  .upload_container {
+    width: 100%;
+    margin-right: 0em;
+    padding-top: 10px;
+    /* border: 2px solid #fff; */
+  }
+  .upload_container form {
+    width: 100%;
+    margin: 1em auto;
+  }
+}
+
+/* TAB */
+@media (min-width: 736px) and (max-width: 1324px) {
+  .upload_container form {
+    width: 65%;
+  }
+}
